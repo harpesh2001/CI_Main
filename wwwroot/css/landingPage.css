@@ -1,0 +1,42 @@
+﻿.card-title {
+    border: 1px solid lightgray;
+    margin-top: -30px;
+    background: white;
+    width: fit-content;
+    border-radius: 30PX;
+    border-color: white;
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-right: 20px;
+    color: gray;
+}
+
+.DateTime-title {
+    border: 1px solid lightgray;
+    margin-top: -30px;
+    background: white;
+    width: fit-content;
+    border-radius: 30PX;
+    border-color: gray;
+    padding-left: 20px;
+    padding-top: 2px;
+    padding-right: 20px;
+    color: gray;
+    z-index: 1;
+}
+
+@media screen and (max-width : 768px) {
+    #chumantar {
+        display: none;
+    }
+}
+
+.btn-primary:focus {
+    background-color: white;
+}
+
+.navbar-light,
+.navbar-toggler {
+    color: white;
+    border-color: white;
+}
