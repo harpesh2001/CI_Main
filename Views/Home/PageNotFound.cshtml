@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="~/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/pagenotfound.css" />
+    <script src="~/js/bootstrap.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container-fluid mw-100 mh-100">
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+            <div class="container-fluid">
+                <button class="btn btn-primary navbar-toggler border-0"
+                        type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample "
+                        aria-controls="offcanvasExample "
+                        aria-expanded="false">
+                    <span class="navbar-toggler-icon border-0"></span>
+                </button>
+
+                <a class="navbar-brand">
+                    <img src="~/Assets/logo.png" alt="logo" class="mw-100" />
+                </a>
+
+                <div class="collapse navbar-collapse offcanvas offcanvas-top"
+                     tabindex="-1"
+                     id="offcanvasExample"
+                     aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <button type="button"
+                                class="btn-close text-reset"
+                                data-bs-dismiss="offcanvas"
+                                aria-label="Close"></button>
+                    </div>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <div class="align-content-center">
+                                <a class="nav-link border-0 bg-transparent p-3 text-dark">
+                                    Stories
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <button class="nav-link dropdown-toggle border-0 bg-transparent p-3 text-dark"
+                                    id="navbarDropdown"
+                                    role="button"
+                                    data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                Policy
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider" />
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+
+
+
+                <div class="d-flex">
+                    <div class="my-auto">
+                        <img src="~/Assets/bell.png" />
+                    </div>
+                    <ul class="nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-dark"
+                               href="#"
+                               id="navbarDropdown"
+                               role="button"
+                               data-bs-toggle="dropdown"
+                               aria-expanded="false">
+                                <img src="~/Assets/user-img.png"
+                                     class="profile-img rounded-circle"
+                                     style="width: 50px; height: 50px" />
+                                <label id="chumantar">Evan Donohue</label>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end"
+                                aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                                <li><a class="dropdown-item" href="#">Add Profile</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Volunteering Timesheet</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Log Out</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="d-flex justify-content-center">
+            <img src="~/Assets/404-Page-image.png" />
+        </div>
+        <div class="d-flex justify-content-center mt-2 my-3 py-1">
+            <h2>Page Not Found</h2>
+        </div>
+        <div class="d-flex justify-content-center my-3 py-1">
+            <h1 style="font-weight: 700">Oops! &nbsp;</h1>
+            <h1 style="font-weight: 500">page you were looking for doesn't exits.</h1>
+        </div>
+        <div class="d-flex justify-content-center my-3 py-1">
+            <h3 style="color: #414141">
+                You may have misstyped the address or the page may have Moved .
+            </h3>
+        </div>
+        <div class="d-flex justify-content-center mt-4 my-3 py-1">
+            <button type="button" class="goto">
+                Go To Homepage<img src="~/Assets/right-arrow.png" class="ms-3" />
+            </button>
+        </div>
+    </div>
+</body>
+</html>

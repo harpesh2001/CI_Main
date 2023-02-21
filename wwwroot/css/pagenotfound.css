@@ -1,0 +1,30 @@
+﻿
+.goto {
+    width: 100%;
+    max-width: 216px;
+    height: 48px;
+    background: #f8863400;
+    border: 2px solid #f88634;
+    color: #f88634;
+    border-radius: 24px;
+}
+
+    .goto:hover {
+        background: #f88634;
+        color: white;
+    }
+
+.btnApply {
+    width: 100%;
+    max-width: 160px;
+    height: 48px;
+    background: #f8863400;
+    border: 2px solid #f88634;
+    color: #f88634;
+    border-radius: 24px;
+}
+
+    .btnApply:hover {
+        background: #f88634;
+        color: white;
+    }
