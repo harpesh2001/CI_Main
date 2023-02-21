@@ -11,6 +11,7 @@
     color: gray;
 }
 
+
 .DateTime-title {
     border: 1px solid lightgray;
     margin-top: -30px;
@@ -25,18 +26,64 @@
     z-index: 1;
 }
 
+.pin {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    background-color: rgba(0, 0, 0, 0.604);
+    border-radius: 50px;
+    padding: 5px 15px;
+    color: white;
+}
+
+.favourite {
+    position: absolute;
+    bottom: 42px;
+    right: 2px;
+    background-color: rgba(0, 0, 0, 0.604);
+    border-radius: 50px;
+    color: white;
+    max-width: 40px;
+    max-height: 40px;
+    padding: 7px;
+}
+
+.adduser {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    background-color: rgba(0, 0, 0, 0.604);
+    border-radius: 50px;
+    max-width: 40px;
+    max-height: 40px;
+    color: white;
+    padding: 7px;
+}
+
+.mission-image {
+    position: relative;
+}
+
 @media screen and (max-width : 768px) {
     #chumantar {
         display: none;
     }
 }
 
-.btn-primary:focus {
+.filter-list {
+    margin-top: 5px;
     background-color: white;
+    border: 1px solid #808080;
+    border-radius: 20px;
+    color: #000;
+    cursor: pointer;
 }
 
-.navbar-light,
-.navbar-toggler {
-    color: white;
-    border-color: white;
+.filter-close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 5px;
+    color: #888;
 }
