@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/missionVlounteering.css" />
+    <script src="./js/bootstrap.min.js"></script>
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid g-0">
+      <!-- -----------    Top nav ------------   -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+          <button
+            class="btn btn-primary navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample "
+            aria-controls="offcanvasExample "
+            aria-expanded="false"
+          >
+            <span class="navbar-toggler-icon border-0"></span>
+          </button>
+
+          <a class="navbar-brand">
+            <img src="Assets/logo.png" alt="logo" class="mw-100" />
+          </a>
+
+          <div
+            class="collapse navbar-collapse offcanvas offcanvas-top"
+            tabindex="-1"
+            id="offcanvasExample"
+            aria-labelledby="offcanvasExampleLabel"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <div class="align-content-center">
+                  <a class="nav-link border-0 bg-transparent p-3 text-dark">
+                    Stories
+                  </a>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <button
+                  class="nav-link dropdown-toggle border-0 bg-transparent p-3 text-dark"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Policy
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <button class="nav-link border-0 bg-transparent p-3 text-dark">
+                  Stories
+                </button>
+              </li>
+              <li class="nav-item dropdown">
+                <button
+                  class="nav-link dropdown-toggle border-0 bg-transparent p-3 text-dark"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Policy
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+          <div class="d-flex">
+            <div class="my-auto">
+              <img src="Assets/bell.png" />
+            </div>
+            <ul class="nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle text-dark"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    src="Assets/user-img.png"
+                    class="profile-img rounded-circle"
+                    style="width: 50px; height: 50px"
+                  />
+                  <label id="chumantar">Evan Donohue</label>
+                </a>
+                <ul
+                  class="dropdown-menu dropdown-menu-end"
+                  aria-labelledby="navbarDropdown"
+                >
+                  <li><a class="dropdown-item" href="#">Dashboard</a></li>
+                  <li><a class="dropdown-item" href="#">Add Profile</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Volunteering Timesheet</a>
+                  </li>
+                  <li><a class="dropdown-item" href="#">Log Out</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- -----------------  filter nav-----------------    -->
+      <nav
+        class="navbar navbar-expand-md navbar-light bg-light justify-content-around shadow p-0 pb-0 pt-0 bg-body"
+      >
+        <div class="container-fluid">
+          <div class="m-0 w-50">
+            <a class="navbar-brand">
+              <img src="./Assets/search.png" alt="logo" class="mw-100" />
+              <input
+                type="text"
+                placeholder="Search hear..."
+                class="border-0 bg-transparent mw-100"
+              />
+            </a>
+          </div>
+          <div class="d-flex align-content-around mt-0 mb-0">
+            <div
+              class="collapse navbar-collapse h-100"
+              id="navbarSupportedContent1"
+            >
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item dropdown">
+                  <button
+                    class="nav-link dropdown-toggle border-0 bg-transparent p-3 text-dark"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Country
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="country 1"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          country 1
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="country 2"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          country 2
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="country 3"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          country 3
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <button
+                    class="nav-link dropdown-toggle border-0 bg-transparent p-3 text-dark"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    City
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="City 1"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          City 1
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="City 2"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          City 2
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="City 3"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          City 3
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="City 4"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          City 4
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <button
+                    class="nav-link dropdown-toggle border-0 bg-transparent p-3 text-dark"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Theme
+                  </button>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="Theme 1"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Theme 1
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="Theme 2"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Theme 2
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="Theme 3"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Theme 3
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="Theme 4"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Theme 4
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="Theme 5"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Theme 5
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <button
+                    class="nav-link dropdown-toggle border-0 bg-transparent p-3 text-dark"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Skills
+                  </button>
+                  <ul
+                    class="dropdown-menu dropdown-menu-end"
+                    aria-labelledby="navbarDropdown"
+                  >
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="Skill 1"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Skill 1
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="Skill 2"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Skill 2
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="Skill 3"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Skill 3
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="Skill 4"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Skill 4
+                        </label>
+                      </div>
+                    </li>
+                    <li class="mx-1">
+                      <div class="form-check">
+                        <input
+                          class="form-check-input checkbox"
+                          type="checkbox"
+                          value="Skill 5"
+                          id="flexCheckDefault"
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          Skill 5
+                        </label>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <button
+            class="btn btn-primary navbar-toggler border-0"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasExample1 "
+            aria-controls="offcanvasExample1 "
+            aria-expanded="false"
+            style="height: 50px"
+          >
+            <span class="border-0"
+              ><img src="./Assets/filter.png" alt="filter"
+            /></span>
+          </button>
+          <div
+            class="collapse navbar-collapse offcanvas offcanvas-end"
+            tabindex="-1"
+            id="offcanvasExample1"
+            aria-labelledby="offcanvasExampleLabel1"
+          >
+            <div class="offcanvas-header">
+              <button
+                type="button"
+                class="btn-close text-reset"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+              ></button>
+            </div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <button
+                  class="nav-link dropdown-toggle border-0 bg-transparent p-3 text-dark"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Country
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <button
+                  class="nav-link dropdown-toggle border-0 bg-transparent p-3 text-dark"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  City
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <button
+                  class="nav-link dropdown-toggle border-0 bg-transparent p-3 text-dark"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Theme
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <button
+                  class="nav-link dropdown-toggle border-0 bg-transparent p-3 text-dark"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Skills
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider" />
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <!-- carosal and rating container -->
+    <div class="container-fluid g-3">
+      <div class="row">
+        <!-- Slider -->
+        <div class="col-lg-5 slider-img">
+          <div class="mySlides myslide1">
+            <div class="numbertext">1 / 6</div>
+            <img
+              src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+              class="w-100 setHeight"
+            />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <img
+              src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-6.png"
+              class="w-100 setHeight"
+            />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <img
+              src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+              class="w-100 setHeight"
+            />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <img
+              src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+              class="w-100 setHeight"
+            />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <img
+              src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+              class="w-100 setHeight"
+            />
+          </div>
+
+          <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <img
+              src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+              class="w-100 setHeight"
+            />
+          </div>
+
+          <a class="carousel-control-prev" onclick="plusSlides(-1)"
+            ><span class="carousel-control-prev-icon" aria-hidden="true"></span
+          ></a>
+          <a class="carousel-control-next" onclick="plusSlides(1)"
+            ><span class="carousel-control-next-icon" aria-hidden="true"></span
+          ></a>
+
+          <div class="row gx-1 mt-2">
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                style="width: 100%"
+                onclick="currentSlide(1)"
+                alt="The Wood"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                style="width: 100%"
+                onclick="currentSlide(2)"
+                alt="Cinque Terre"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                style="width: 100%"
+                onclick="currentSlide(3)"
+                alt="Mountains and fjords"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                style="width: 100%"
+                onclick="currentSlide(4)"
+                alt="Northern Lights"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                style="width: 100%"
+                onclick="currentSlide(5)"
+                alt="Nature and sunrise"
+              />
+            </div>
+            <div class="column">
+              <img
+                class="demo cursor"
+                src="./Assets/CSR-initiative-stands-for-Coffee--and-Farmer-Equity-4.png"
+                style="width: 100%"
+                onclick="currentSlide(6)"
+                alt="Snowy Mountains"
+              />
+            </div>
+          </div>
+        </div>
+        <!-- rating -->
+        <div class="col-lg-7">
+          <div class="row m-3 mt-3 my-auto">
+            <h4>
+              Some quick example text to build on the card title and make up the
+              bulk of the card's content.
+            </h4>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis
+              corrupti nesciunt mollitia voluptate minus harum, sequi fugiat
+              quis excepturi ipsum animi quod reiciendis voluptatibus aperiam
+              alias unde, esse possimus asperiores?
+            </p>
+          </div>
+          <div class="row">
+            <hr />
+            <div class="d-flex DateTime-class justify-content-center">
+              <p class="dateTime">PLant 1000 Trees</p>
+            </div>
+          </div>
+          <!-- seats and goal -->
+          <div class="row">
+            <div
+              class="d-flex flex-column flex-md-row flex-lg-row flex-xl-row justify-content-around"
+            >
+              <div class="d-flex justify-content-center flex-grow-1">
+                <div class="flex-shrink-0">
+                  <img src="./Assets/Seats-left.png" alt="..." />
+                </div>
+                <div class="d-flex flex-column ms-3">
+                  <div>90</div>
+                  <div style="font-size: small">Seats Left</div>
+                </div>
+              </div>
+
+              <div class="d-flex justify-content-center flex-grow-1">
+                <div class="flex-shrink-0">
+                  <img src="./Assets/mission.png" alt="..." />
+                </div>
+                <div class="d-flex flex-column ms-3">
+                  <div class="progress">
+                    <div
+                      class="progress-bar bg-warning"
+                      role="progressbar"
+                      style="width: 75%"
+                      aria-valuenow="75"
+                      aria-valuemin="0"
+                      aria-valuemax="100"
+                    ></div>
+                  </div>
+                  <div style="font-size: small">8,000 achieved</div>
+                </div>
+              </div>
+            </div>
+            <div class="mt-3"></div>
+            <hr />
+          </div>
+          <!-- favourite and recomand -->
+          <div
+            class="d-flex flex-column flex-md-row flex-lg-row flex-xl-row justify-content-around"
+          >
+            <!-- favourite -->
+            <div class="d-flex justify-content-center m-2">
+              <button class="border-1 bg-transparent rounded-pill px-5 py-2">
+                <img src="./Assets/heart1.png" alt="like" /> Add to Favourite
+              </button>
+            </div>
+            <!-- recomand -->
+            <div class="d-flex justify-content-center m-2">
+              <button class="border-1 bg-transparent rounded-pill px-5 py-2">
+                <img src="./Assets/add1.png" alt="like" /> Recommend to a
+                Co-Worker
+              </button>
+            </div>
+          </div>
+          <!-- stars and squre cards -->
+          <div>
+            <!-- stars -->
+            <div class="row">
+              <div class="mt-3"></div>
+              <hr />
+              <div class="d-flex DateTime-class justify-content-center">
+                <div class="dateTime border-0 px-1">
+                  <div class="d-flex">
+                    <img src="./Assets/selected-star.png" alt="" />
+                    <img src="./Assets/selected-star.png" alt="" />
+                    <img src="./Assets/selected-star.png" alt="" />
+                    <img src="./Assets/selected-star.png" alt="" />
+                    <img src="./Assets/selected-star.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- squre cards -->
+            <div class="row">
+              <div class="d-flex justify-content-around flex-wrap">
+                <div
+                  class="d-flex flex-column justify-content-between border rounded mt-2"
+                  style="width: 130px"
+                >
+                  <div class="pb-5 px-2 pt-2">
+                    <img src="./Assets/pin1.png" alt="" srcset="" />
+                  </div>
+                  <div class="px-2 pb-2">
+                    <div class="text-muted">City</div>
+                    <div>London</div>
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-column justify-content-between border rounded mt-2"
+                  style="width: 130px"
+                >
+                  <div class="pb-5 px-2 pt-2">
+                    <img src="./Assets/web.png" alt="" srcset="" />
+                  </div>
+                  <div class="px-2 pb-2">
+                    <div class="text-muted">Theme</div>
+                    <div>Environment</div>
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-column justify-content-between border rounded mt-2"
+                  style="width: 130px"
+                >
+                  <div class="pb-5 px-2 pt-2">
+                    <img src="./Assets/calender.png" alt="" srcset="" />
+                  </div>
+                  <div class="px-2 pb-2">
+                    <div class="text-muted">Date</div>
+                    <div>On going opportunity</div>
+                  </div>
+                </div>
+                <div
+                  class="d-flex flex-column justify-content-between border rounded mt-2"
+                  style="width: 130px"
+                >
+                  <div class="pb-5 px-2 pt-2">
+                    <img src="./Assets/organization.png" alt="" srcset="" />
+                  </div>
+                  <div class="px-2 pb-2">
+                    <div class="text-muted">Organization</div>
+                    <div>CSE Network</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- apply button -->
+          <div class="d-flex justify-content-center pt-3">
+            <button
+              class="rounded-pill btn btn-outline-warning border-2 px-5 p-2"
+            >
+              Apply <img src="./Assets/right-arrow.png" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!----------- -------  Tabs and information  ---------------- -->
+    <div class="row mt-3 px-3">
+      <div class="col-xl-8 col-lg-8 col-md-8">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active text-black"
+              id="mission-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#mission"
+              type="button"
+              role="tab"
+              aria-controls="mission"
+              aria-selected="true"
+            >
+              Mission
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-black"
+              id="profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#organization"
+              type="button"
+              role="tab"
+              aria-controls="organization"
+              aria-selected="false"
+            >
+              Organization
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link text-black"
+              id="comments-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#comments"
+              type="button"
+              role="tab"
+              aria-controls="comments"
+              aria-selected="false"
+            >
+              Comments
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content mt-3" id="myTabContent">
+          <div
+            class="tab-pane fade show active"
+            id="mission"
+            role="tabpanel"
+            aria-labelledby="mission-tab"
+          >
+            <h3>Introduction</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.
+            </p>
+            <p>
+              Duis aute irure dolor in reprehenderitin voluptate velit esse
+              cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat.Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <h3>Challenge</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+              reprehenderit in voluptate velit esse cillum dolore eu fugiat
+              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+              sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam, quis nostrud exercitation ullamco laboris
+              nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat
+              cupidatat non proident, sunt in culpa qui officia deserunt mollit
+              anim id est laborum.
+            </p>
+            <h3>Documents</h3>
+            <div
+              class="d-flex flex-xl-row flex-lg-row flex-md-column flex-sm-column flex-column justify-content-around"
+            >
+              <div class="d-flex justify-content-center mt-2">
+                <button class="btn btn-outline-dark rounded-pill py-2">
+                  <img src="./Assets/pdf.png" alt="like" /> lorem-ipsum.pdf
+                </button>
+              </div>
+
+              <div class="d-flex justify-content-center mt-2">
+                <button class="btn btn-outline-dark rounded-pill py-2">
+                  <img src="./Assets/doc.png" alt="like" />
+                  at_vero_eos_accusamus.doc
+                </button>
+              </div>
+
+              <div class="d-flex justify-content-center mt-2">
+                <button class="btn btn-outline-dark rounded-pill py-2">
+                  <img src="./Assets/xlsx.png" alt="like" /> important_doc.xls
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="organization"
+            role="tabpanel"
+            aria-labelledby="organization-tab"
+          >
+            <p>
+              Optimy organizations working on environmental, social, advocacy
+              and human rights. They can work to promote social or political
+              change on a broad scale or very locally. NGOs play a critical part
+              in developing society, improving communities, and promoting
+              citizen participation.
+            </p>
+          </div>
+
+          <div
+            class="tab-pane fade"
+            id="comments"
+            role="tabpanel"
+            aria-labelledby="comments-tab"
+          >
+            <div>
+              <div class="p-2">
+                <div class="d-flex flex-row align-items-start">
+                  <textarea
+                    class="form-control ml-1 shadow-none textarea"
+                    placeholder="Enter Your Comments...."
+                  ></textarea>
+                </div>
+                <div class="mt-2">
+                  <button
+                    class="btn btn-outline-warning rounded-pill"
+                    type="button"
+                  >
+                    Post comment
+                  </button>
+                </div>
+              </div>
+              <div class="bg-light p-2">
+                <div class="d-flex bg-white p-2 shadow mb-2">
+                  <div class="d-flex flex-row user-info align-self-center">
+                    <img
+                      class="rounded-circle"
+                      src="./Assets/volunteer1.png"
+                      width="50"
+                      height="50px"
+                    />
+                  </div>
+                  <div class="mt-2 px-3">
+                    <div class="d-flex flex-column justify-content-start ml-2">
+                      <span class="d-block font-weight-bold name"
+                        >Margaret Walsh</span
+                      >
+                      <span class="date text-black-50"
+                        >Monday, October 21, 2019, 4:57 PM</span
+                      >
+                    </div>
+                    <p class="comment-text mt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex bg-white p-2 shadow mb-2">
+                  <div class="d-flex flex-row user-info align-self-center">
+                    <img
+                      class="rounded-circle"
+                      src="./Assets/volunteer1.png"
+                      width="50"
+                      height="50px"
+                    />
+                  </div>
+                  <div class="mt-2 px-3">
+                    <div class="d-flex flex-column justify-content-start ml-2">
+                      <span class="d-block font-weight-bold name"
+                        >Margaret Walsh</span
+                      >
+                      <span class="date text-black-50"
+                        >Monday, October 21, 2019, 4:57 PM</span
+                      >
+                    </div>
+                    <p class="comment-text mt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor
+                    </p>
+                  </div>
+                </div>
+                <div class="d-flex bg-white p-2 shadow mb-2">
+                  <div class="d-flex flex-row user-info align-self-center">
+                    <img
+                      class="rounded-circle"
+                      src="./Assets/volunteer1.png"
+                      width="50"
+                      height="50px"
+                    />
+                  </div>
+                  <div class="mt-2 px-3">
+                    <div class="d-flex flex-column justify-content-start ml-2">
+                      <span class="d-block font-weight-bold name"
+                        >Margaret Walsh</span
+                      >
+                      <span class="date text-black-50"
+                        >Monday, October 21, 2019, 4:57 PM</span
+                      >
+                    </div>
+                    <p class="comment-text mt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                      sed do eiusmod tempor
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- info and recent volunteered -->
+      <div class="col-xl-4 col-lg-4 col-md-4 container-fluid mt-5 px-5">
+        <div class="row border rounded border-secondary mt-2">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active fs-3"
+                data-bs-toggle="tab"
+                data-bs-target="#tab-1"
+                type="button"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+              >
+                Information
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab-1" role="tabpanel">
+              <div class="d-flex flex-column mt-3">
+                <div>
+                  <p class="mb-0">
+                    Skills: <b class="px-4">Cool, Easy Going, Math, Computer</b>
+                  </p>
+                </div>
+                <hr />
+                <div>
+                  <p class="mb-0">Days: <b class="px-4">week days only</b></p>
+                </div>
+
+                <hr />
+                <div class="d-flex pb-3">
+                  Rating
+                  <div class="d-flex">
+                    <img src="./Assets/selected-star.png" alt="" srcset="" />
+                    <img src="./Assets/selected-star.png" alt="" srcset="" />
+                    <img src="./Assets/selected-star.png" alt="" srcset="" />
+                    <img src="./Assets/selected-star.png" alt="" srcset="" />
+                    <img src="./Assets/selected-star.png" alt="" srcset="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row border rounded border-secondary mt-2">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active fs-3"
+                data-bs-toggle="tab"
+                data-bs-target="#tab-1"
+                type="button"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+              >
+                Recent Volunteers
+              </button>
+            </li>
+          </ul>
+          <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab-1" role="tabpanel">
+              <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-2">
+                <div class="col">
+                  <div
+                    class="d-flex flex-column justify-content-center mt-2 mb-1"
+                  >
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="./Assets/volunteer4.png"
+                        alt=""
+                        class="rounded-circle w-50 h-50"
+                        srcset=""
+                      />
+                    </div>
+                    <div class="d-flex justify-content-center">kjjj</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div
+                    class="d-flex flex-column justify-content-center mt-2 mb-1"
+                  >
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="./Assets/volunteer4.png"
+                        alt=""
+                        class="rounded-circle w-50 h-50"
+                        srcset=""
+                      />
+                    </div>
+                    <div class="d-flex justify-content-center">gg</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div
+                    class="d-flex flex-column justify-content-center mt-2 mb-1"
+                  >
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="./Assets/volunteer4.png"
+                        alt=""
+                        class="rounded-circle w-50 h-50"
+                        srcset=""
+                      />
+                    </div>
+                    <div class="d-flex justify-content-center">h</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div
+                    class="d-flex flex-column justify-content-center mt-2 mb-1"
+                  >
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="./Assets/volunteer4.png"
+                        alt=""
+                        class="rounded-circle w-50 h-50"
+                        srcset=""
+                      />
+                    </div>
+                    <div class="d-flex justify-content-center">hh</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div
+                    class="d-flex flex-column justify-content-center mt-2 mb-1"
+                  >
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="./Assets/volunteer9.png"
+                        alt=""
+                        class="rounded-circle w-50 h-50"
+                        srcset=""
+                      />
+                    </div>
+                    <div class="d-flex justify-content-center">kjjj</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div
+                    class="d-flex flex-column justify-content-center mt-2 mb-1"
+                  >
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="./Assets/volunteer9.png"
+                        alt=""
+                        class="rounded-circle w-50 h-50"
+                        srcset=""
+                      />
+                    </div>
+                    <div class="d-flex justify-content-center">kjjj</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div
+                    class="d-flex flex-column justify-content-center mt-2 mb-1"
+                  >
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="./Assets/volunteer9.png"
+                        alt=""
+                        class="rounded-circle w-50 h-50"
+                        srcset=""
+                      />
+                    </div>
+                    <div class="d-flex justify-content-center">kjjj</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div
+                    class="d-flex flex-column justify-content-center mt-2 mb-1"
+                  >
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="./Assets/volunteer9.png"
+                        alt=""
+                        class="rounded-circle w-50 h-50"
+                        srcset=""
+                      />
+                    </div>
+                    <div class="d-flex justify-content-center">kjjj</div>
+                  </div>
+                </div>
+                <div class="col">
+                  <div
+                    class="d-flex flex-column justify-content-center mt-2 mb-1"
+                  >
+                    <div class="d-flex justify-content-center">
+                      <img
+                        src="./Assets/volunteer9.png"
+                        alt=""
+                        class="rounded-circle w-50 h-50"
+                        srcset=""
+                      />
+                    </div>
+                    <div class="d-flex justify-content-center">kjjj</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides((slideIndex += n));
+    }
+
+    function currentSlide(n) {
+      showSlides((slideIndex = n));
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      // let captionText = document.getElementById("caption");
+
+      if (n > slides.length) {
+        slideIndex = 1;
+      }
+      if (n < 1) {
+        slideIndex = slides.length;
+      }
+      // myslide1.style.display = "block";
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slides[slideIndex - 1].style.display = "block";
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      // captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+</html>
