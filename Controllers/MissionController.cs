@@ -4,9 +4,13 @@ namespace CI_Platform.Controllers
 {
     public class MissionController : Controller
     {
-        public IActionResult MIssionDetail()
+       
+
+        public IActionResult MissionVolunteering()
         {
-            return View();
+            return View();  
         }
+
     }
+
 }
